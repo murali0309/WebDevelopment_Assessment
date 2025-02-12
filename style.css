@@ -1,0 +1,34 @@
+
+
+
+/* Css Reset / Defaults / Variables  */
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family:'Lucida Sans', Verdana, sans-serif ;
+
+}
+body{
+    background-color: aliceblue;
+}
+
+/* Utility class */
+
+
+/* homepage class */
+.grapic_line{
+    background-color: black;
+    width: 100%;
+    height: 13px;
+}
+
+.centerImgContainer{
+    display: flex;
+    flex-direction: column;
+    
+}
+footer{
+    height: 100vh;
+    background-color: beige;
+}
