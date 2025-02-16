@@ -1,4 +1,4 @@
-
+/* import font style here or attach this at html page*/
 
 
 /* Css Reset / Defaults / Variables  */
@@ -6,28 +6,87 @@
     margin: 0;
     padding: 0;
 
-    font-family:'Lucida Sans', Verdana, sans-serif ;
-
+    font-family:'Lucida Sans', Verdana, sans-serif;
+    color: aliceblue ;
 }
 body{
     background-color: aliceblue;
 }
+img{
+    display: block;
+    width: 100%;
+}
+
+li{
+    list-style: none;
+    margin-left: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
 
 /* Utility class */
-
+    /* colors */
+    /* fonts */
+    /* flex */
+.flexrow{
+    display: flex;
+}
 
 /* homepage class */
-.grapic_line{
+
+    /* navigation bar */
+    /* Block-1 */
+.nav_grapic_line{
     background-color: black;
     width: 100%;
-    height: 13px;
+    height: .5rem;
 }
 
-.centerImgContainer{
-    display: flex;
-    flex-direction: column;
-    
+    /* Block-2 */
+.nav_block2_con{
+    background: linear-gradient( black 50%, white 50%);
 }
+.nav_grapic_side_bg_r{
+    background-color: black;
+    width: 100%;
+    border-radius: 0 0 0 1rem ; /* update boder-radius */
+    color: whitesmoke;
+}
+.nav_mid_container{
+    background-color:white;
+    padding: .5rem;
+    border-radius: 1rem 1rem 0 0; /* update boder-radius */
+    width: 40%;
+    text-align: center;
+}
+.nav_grapic_side_bg_l{
+    background-color: black;
+    width: 100%;
+    border-radius: 0 0 1rem; /* update boder-radius */
+    color: whitesmoke;
+}
+
+    /* Header section */
+.header{
+    height: 100vh;
+}
+
+section{
+    background-color: black;
+    width: 100%;
+}
+    /* coloum-1 left */
+    /* coloum-2 mid */
+/* .h_coloum_m{
+    position: absolute;
+} */
+    /* coloum-3 right */
+
+    /* Footer section */
 footer{
     height: 100vh;
     background-color: beige;
