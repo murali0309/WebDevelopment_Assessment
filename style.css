@@ -11,12 +11,15 @@
 
     text-decoration: none;
     list-style: none;
+
+    scroll-behavior: smooth;
 }
 
 :root{
     /* Colors */
     --color-1: #ffff;
     --color-2: #000;
+    --color-3: whitesmoke;
 
     /* font */
     --font-family-p: 'Lucida Sans', sans-serif;
@@ -34,13 +37,16 @@
 
     --spacing-1: 1rem;
     --spacing-2: 2rem;
+    --spacing-xl: 5rem;
 
     --img-sizing-1: 10rem;
-
 }
 
 section{
     border-style: solid;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: var(--spacing-xl);
 }
 
 img{
@@ -62,6 +68,11 @@ li{
     flex-direction: column;
 }
 
+.imgcontainer{
+    width: var(--spacing-xl);
+}
+
+                        /* media screen webscreen */
 /* navigation section */
 nav{
     justify-content: space-between;
@@ -73,6 +84,10 @@ nav{
     background-color: aliceblue;
     position: relative;
     height: 400px;
+    padding-bottom: var(--spacing-xl);
+    
+    justify-content: center;
+    align-items: center;
 }
 
 .HeadImgContainer{
@@ -81,16 +96,54 @@ nav{
     transform: translateX(-50%);
 }
 
+/* .leftCol,
+.midcol, 
+.rightcol{
+    width: 30%;
+} */
+
+/* account section */
+.centercontent{
+    align-items: center;
+    justify-content: center;
+}
 /* order section */
+/* .ordersection{
+    animation: 6s slide-animation infinite linear;
+} */
 .ordersection img{
     width: var(--img-sizing-1);
 }
 /* reward section */
-
-/* about us section */
-.aboutussection img{
-    width: var(--img-sizing-1);
+.rewardcontent{
+    align-items: center;
+    gap: var(--spacing-xl);
 }
-/* media screen webscreen */
-/* media screen 470px */
-/* media screen 320px */
+.rewardcontent img{
+    transform: rotate(45deg);
+}
+/* about us section */
+.aboutcontent{
+    background-color: var(--color-3);
+    padding: var(--spacing-1);
+    border-radius: var(--spacing-1);
+
+    align-items: center;
+    justify-content: space-between;
+}
+.abouttext{
+    max-width: 50%;
+}
+
+                        /* media screen 470px */
+                        /* media screen 320px */
+
+/* animation keyframes */
+@keyframes slide-animation {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform:translateX(-100%) ;
+    }
+}
