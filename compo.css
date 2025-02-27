@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding:0;
+    
+}
+
+.block{
+    background-color: aliceblue;
+    height: 50vh;
+}
+
+.header_container{
+    overflow: hidden;
+}
+
+.text_container{
+    text-align: center;
+}
+
+.line_1{
+    /* animation: textanimation 2s infinite; */
+    background-color: beige;
+}
+
+@keyframes textanimation {
+    0%{
+        opacity: 0;
+    }
+}

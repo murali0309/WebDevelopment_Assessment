@@ -1,0 +1,80 @@
+
+
+
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+    font-family: var(--font-family-p);
+    color: var(--color-2);
+}
+
+:root{
+    /* Colors */
+    --color-1: #ffff;
+    --color-2: #000;
+
+    /* font */
+    --font-family-p: 'Lucida Sans', sans-serif;
+    --font-size-p: .9rem;
+    --font-size-h1: 1rem;
+    --font-size-btn: 1rem;
+
+    --font-weight-r:400;
+    --font-weight-b:500;
+    --font-weight-xb:900;
+
+    /* spacing */
+    --padding-1: 1rem;
+    --padding-2: 2rem;
+
+    --spacing-1: 1rem;
+    --spacing-2: 2rem;
+}
+
+img{
+    display: block;
+}
+
+/* change li here as child of first ul tag */
+li{
+    margin-right: 1rem;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Utility Class */
+.flex{
+    display: flex;
+}
+
+.flexcol{
+    display:flex;
+    flex-direction: column;
+}
+
+/* navigation section */
+.nav_container{
+    align-items: center;
+    justify-content:space-between ;
+    width: 100%;
+}
+
+.headsection{
+    background-color: aliceblue;
+    position: relative;
+}
+
+.headerimg{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-25%);
+}
+
+/* media screen webscreen */
+/* media screen 470px */
+/* media screen 320px */

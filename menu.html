@@ -3,32 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>componets</title>
+    <title>Menu</title>
 
     <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="home.css">
 </head>
 <body>
-<!-- this is a menu page -->
-<!-- menu img banner like notion top banner img -->
-<!-- each product section with img to item section linkpage -->
-<section class="menu_img_banner">
-    <img src="./media/Ellipse 2.png" alt="">
-</section>
-<!-- menu start here multiple blocks -->
-<!-- menu block-1 -->
-<section class="menu_block">
-    <h1 class="menu_block_head">Menu catagory titile</h1>
-    <!-- item_blocks starts here -->
-    <div class="item_block | flexcol">
-        <img src="./media/Ellipse 2.png" alt="">
-        <p>item name</p>
-    </div>
-    <!-- item_blocks here -->
-</section>
+    <!-- web screen layout -->
+    <header class="nav_container | flex">
+        <ul class="navlinks | flex">
+            <a href="#"><li>Home</li></a>
+            <a href="menu.html"><li>Menu</li></a>
+            <a href="#"><li>Find a Store</li></a>
+        </ul>
+        <a class="logo" href="#">Epresso Star</a>
+        <ul class="navicons | flex">
+            <li><a href=""><img src="./media/location_on_icon.svg" alt=""></a></li>
+            <li><a href=""><img src="./media/location_on_icon.svg" alt=""></a></li>
+        </ul>
+    </header>
+    <!-- main menu section  -->
+     <main>
+        <section class="searchContainer | flex">
+            <div>icon</div>
+            <input type="search" placeholder="Find Item">
+        </section>
 
-<!-- menu block-2 -->
-<!-- menu block-3 -->
-<!-- menu block-4 -->
+        <section class="menucontainer">
+            <p>menu</p>
+        </section>
+
+
+        <section class="itemtitlecontainer">
+            <p>star item</p>
+        </section>
+        <section class="itemcontainer">
+
+            <div class="itemcard | flexcol">
+                <img class="itemimg" src="./media/whitelatte.jpg" alt="">
+                <p>item name</p>
+                <div class="countcontainer">
+                    <button class="minsbtu">-</button>
+                    <button class="minsbtu">Add</button>
+                    <button class="minsbtu">-</button>
+                </div>
+            </div>
+            
+        </section>
+     </main>
+    
 <!-- footer add here after from index html page -->
 </body>
 </html>

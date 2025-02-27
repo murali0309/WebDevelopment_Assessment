@@ -1,13 +1,29 @@
 /* import font style here or attach this at html page*/
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
 
+
+/* .honk-<uniquifier> {
+    font-family: "Honk", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "MORF" 15,
+      "SHLN" 50;
+  } */
+
+  :root{
+    --font-family-Honk: "Honk", serif;
+    --font-family-normal: 'Lucida Sans', sans-serif;
+  }
 
 /* Css Reset / Defaults / Variables  */
 *{
     margin: 0;
     padding: 0;
 
-    font-family:'Lucida Sans', Verdana, sans-serif;
-    color: aliceblue ;
+    font-family:var(--font-family-normal);
+    color:burlywood;
 }
 body{
     background-color: aliceblue;
@@ -35,10 +51,20 @@ a{
 .flexrow{
     display: flex;
 }
+.flexcol{
+    display: flex;
+    flex-direction: column;
+}
 
 /* homepage class */
 
     /* navigation bar */
+
+.nav{
+    position: static;
+    z-index: 1; /* nav block section should hide coffee water fall animation */
+}
+    
     /* Block-1 */
 .nav_grapic_line{
     background-color: black;
@@ -76,18 +102,42 @@ a{
 }
 
 section{
-    background-color: black;
+    /* background-color: black; */
     width: 100%;
 }
+/* row-1 */
     /* coloum-1 left */
     /* coloum-2 mid */
-/* .h_coloum_m{
-    position: absolute;
-} */
+.BGcoffeefall{
+    position: relative;
+    transform: translateY(0px);
+    z-index: -1; /* update required later */
+    animation: 5s ease-in coffeeWaterfall infinite; /* keep animation in hover state only */
+} 
+.h_coffeecup{
+    position: relative;
+    transform: translatey(-300px);
+}
+    
     /* coloum-3 right */
-
+/* row-2 */
+.platform_container{
+    position: relative;
+    transform: translateY(-330px);
+    z-index:-1 ;
+}
     /* Footer section */
 footer{
     height: 100vh;
     background-color: beige;
+}
+
+/* animations */
+@keyframes coffeeWaterfall {
+    from{
+        transform: translateY(-500px);
+    }
+    to{
+        transform: translateY(0);
+    }
 }
