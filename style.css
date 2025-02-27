@@ -1,143 +1,96 @@
-/* import font style here or attach this at html page*/
-@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
 
 
-/* .honk-<uniquifier> {
-    font-family: "Honk", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-      "MORF" 15,
-      "SHLN" 50;
-  } */
 
-  :root{
-    --font-family-Honk: "Honk", serif;
-    --font-family-normal: 'Lucida Sans', sans-serif;
-  }
-
-/* Css Reset / Defaults / Variables  */
+/* CSS Reset */
 *{
     margin: 0;
     padding: 0;
+    font-size: inherit;
+    font-family: var(--font-family-p);
+    color: var(--color-2);
 
-    font-family:var(--font-family-normal);
-    color:burlywood;
-}
-body{
-    background-color: aliceblue;
-}
-img{
-    display: block;
-    width: 100%;
-}
-
-li{
-    list-style: none;
-    margin-left: 1rem;
-}
-
-a{
     text-decoration: none;
-    color: white;
+    list-style: none;
 }
 
+:root{
+    /* Colors */
+    --color-1: #ffff;
+    --color-2: #000;
 
-/* Utility class */
-    /* colors */
-    /* fonts */
-    /* flex */
-.flexrow{
-    display: flex;
-}
-.flexcol{
-    display: flex;
-    flex-direction: column;
-}
+    /* font */
+    --font-family-p: 'Lucida Sans', sans-serif;
+    --font-size-p: .9rem;
+    --font-size-h1: 1rem;
+    --font-size-btn: 1rem;
 
-/* homepage class */
+    --font-weight-r:400;
+    --font-weight-b:500;
+    --font-weight-xb:900;
 
-    /* navigation bar */
+    /* spacing */
+    --padding-1: 1rem;
+    --padding-2: 2rem;
 
-.nav{
-    position: static;
-    z-index: 1; /* nav block section should hide coffee water fall animation */
-}
-    
-    /* Block-1 */
-.nav_grapic_line{
-    background-color: black;
-    width: 100%;
-    height: .5rem;
-}
+    --spacing-1: 1rem;
+    --spacing-2: 2rem;
 
-    /* Block-2 */
-.nav_block2_con{
-    background: linear-gradient( black 50%, white 50%);
-}
-.nav_grapic_side_bg_r{
-    background-color: black;
-    width: 100%;
-    border-radius: 0 0 0 1rem ; /* update boder-radius */
-    color: whitesmoke;
-}
-.nav_mid_container{
-    background-color:white;
-    padding: .5rem;
-    border-radius: 1rem 1rem 0 0; /* update boder-radius */
-    width: 40%;
-    text-align: center;
-}
-.nav_grapic_side_bg_l{
-    background-color: black;
-    width: 100%;
-    border-radius: 0 0 1rem; /* update boder-radius */
-    color: whitesmoke;
-}
+    --img-sizing-1: 10rem;
 
-    /* Header section */
-.header{
-    height: 100vh;
 }
 
 section{
-    /* background-color: black; */
-    width: 100%;
-}
-/* row-1 */
-    /* coloum-1 left */
-    /* coloum-2 mid */
-.BGcoffeefall{
-    position: relative;
-    transform: translateY(0px);
-    z-index: -1; /* update required later */
-    animation: 5s ease-in coffeeWaterfall infinite; /* keep animation in hover state only */
-} 
-.h_coffeecup{
-    position: relative;
-    transform: translatey(-300px);
-}
-    
-    /* coloum-3 right */
-/* row-2 */
-.platform_container{
-    position: relative;
-    transform: translateY(-330px);
-    z-index:-1 ;
-}
-    /* Footer section */
-footer{
-    height: 100vh;
-    background-color: beige;
+    border-style: solid;
 }
 
-/* animations */
-@keyframes coffeeWaterfall {
-    from{
-        transform: translateY(-500px);
-    }
-    to{
-        transform: translateY(0);
-    }
+img{
+    display: block;
 }
+
+/* change li here as child of first ul tag */
+li{
+    margin-right: 1rem;
+}
+
+/* Utility Class */
+.flex{
+    display: flex;
+}
+
+.flexcol{
+    display:flex;
+    flex-direction: column;
+}
+
+/* navigation section */
+nav{
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* header section */
+.headsection{
+    background-color: aliceblue;
+    position: relative;
+    height: 400px;
+}
+
+.HeadImgContainer{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* order section */
+.ordersection img{
+    width: var(--img-sizing-1);
+}
+/* reward section */
+
+/* about us section */
+.aboutussection img{
+    width: var(--img-sizing-1);
+}
+/* media screen webscreen */
+/* media screen 470px */
+/* media screen 320px */

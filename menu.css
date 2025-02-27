@@ -5,6 +5,10 @@
     --color-1: #ffff;
     --color-2: #000;
 
+    --background-1: aliceblue;
+    --background-2: beige;
+    --background-3: aquamarine;
+
     /* font */
     --font-family-p: 'Lucida Sans', sans-serif;
     --font-size-p: .9rem;
@@ -21,10 +25,12 @@
 
     --spacing-1: 1rem;
     --spacing-2: 2rem;
+
+    --item-img-sizing-1: 5rem;
 }
 
 body{
-    background-color: aliceblue;
+    background-color: var(--background-1);
 }
 /* utility class */
 
@@ -34,7 +40,8 @@ body{
 /* main */
 main{
     width: 80%;
-    margin: 0 auto;background-color: beige;
+    margin: 0 auto;
+    background-color: var(--background-2)
 }
 
 /* search section */
@@ -56,10 +63,18 @@ main{
 }
 /* item tile continaer */
 .itemtitlecontainer{
-    background-color: aquamarine;
+    background-color: var(--background-3)
 }
 
 /* itemcontainer */
+.itemcontainer{
+    gap: var(--spacing-1);
+}
+.itemcard{
+    border-style: solid;
+    width: fit-content;
+    align-items: center;
+}
 .itemimg{
-    width: 120px;
+    width: var(--item-img-sizing-1)
 }

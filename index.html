@@ -3,77 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>home</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- web screen layout -->
+    <nav class="nav_container | flex">
+        <ul class="navlinks | flex">
+            <a href="#"><li>Home</li></a>
+            <a href="menu.html"><li>Menu</li></a>
+            <a href="#"><li>Find a store</li></a>
+        </ul>
+        <a class="logo" href="#">Epresso Star</a>
+        <ul class="navicons | flex">
+            <li class="flex"><a href=""><img src="./media/location_on_icon.svg" alt=""></a></li>
+            <li class="flex"><a href="">Find a store</a></li>
+            <button>Join Us</button>
+            <button>Sign in</button>
+        </ul>
+    </nav>
 
-    <!-- navigation bar -->
-    <!-- webpage banner -->
-    <!-- animation section how this website works
-            - marketing illustartion of item, sub items combo  ordering-->
-    <!-- cards of items and animated #tags -->
-    <!-- offer section -->
-    <!-- footer -->
-    <header>
-        <nav> <!-- nav container holding 2 blocks -->
-            <!-- "Block-1 " a black line -->
-             <div class="nav_grapic_line"></div>
+    <!-- main section -->
+    <main>
+        <header class="headsection | flex">
+            <p class="headtext">Expresso</p>
+            <div class="HeadImgContainer | flexcol">
+                <img class="headerimg" src="./media/coffeeCupCrop.png" width="240px" alt="">
+                <button>Buy now</button>
+            </div>
+        </header>
 
-            <!-- "Block-2"  left side nav links + 3d flit logo text animation + right side logo links -->
-             <div class="nav_block2_con | flexrow">
-
-                <!-- right side block -->
-                <div class="nav_grapic_side_bg_l"> 
-                    <!-- <p>nav links are here</p> -->
-                    <ul class="nav_links | flexrow">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="menu.html">Menu</a></li>
-                        <li><a href="#">New</a></li>
-                    </ul>
-                </div>
-
-                <!-- mid container "logo text animation"-->
-                <div class="nav_mid_container"> <p> animation</p> </div>
-
-                <!-- left side block -->
-                <div class="nav_grapic_side_bg_r"> 
-                    <p>nav icons and menu bar</p>
-                </div>
-             </div>
-             
-        </nav>
-    </header>
-    <!-- all items hover animations, background generator circle stars  -->
-    <main class="header"> 
-        <!-- row-1 -->
-        <section class="row-1 | flexrow">
-            <!-- 3 coloum blocks bannner -->
-            
-            <!-- coloum-1 left -->
-            <section class="h_coloum_l">
-                <p>animated banner text here</p>
-            </section>
-            <!-- coloum-2 mid -->
-            <section class="h_coloum_m">
-                <img class="BGcoffeefall" src="./media/coffeeDrippingClound.png" alt="">
-                <img class="h_coffeecup" src="./media/Rectangle 4.png" alt="">
-            </section>
-            <!-- coloum-3 right -->
-            <section class="h_coloum_r">
-                <p>animated banner text continous here</p>
-            </section>
+        <section class="accoutsection">
+            <p>find us</p>
+            <p>hangout</p>
+            <p>stress out</p>
+            <div>
+                <button>join us</button>
+                <button>sign in</button>
+            </div>
         </section>
-        <!-- row-2 -->
-        <section class="platform_container | flexrow">
-            <div class="steel_base | absolute">
-                <img src="./media/metalTexturecrop.png" alt=""></div>    
-        </section>
-    </main> 
 
-    <footer>
-        <!-- footer colomuns -->
-    </footer>
+        <section class="ordersection">
+            <img src="./media/whitelatte.jpg" alt="">
+            <button>Order now</button>
+        </section>
+
+        <section class="rewardsection">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates exercitationem</p>
+            <button>Find rewards</button>
+        </section>
+
+        <section class="aboutussection">
+            <p>About Us</p>
+            <img src="./media/coffeeCupCrop.png" alt="">
+            <button>Know more</button>
+        </section>
+    </main>
+
 </body>
 </html>
