@@ -11,6 +11,41 @@ shakes
 
 ---
 ### color shades
+- color pallete -1
+ /* CSS HEX */
+--dark-purple: #1e152aff;
+--feldgrau: #4e6766ff;
+--moonstone: #5ab1bbff;
+--pistachio: #a5c882ff;
+--jasmine: #f7dd72ff;
+
+/* CSS HEX */
+--midnight-green: #0e3b43ff;
+--myrtle-green: #357266ff;
+--ash-gray: #a3bbadff;
+--field-drab: #65532fff;
+--caf-noir: #312509ff;
+
+/* CSS HEX */
+--dark-moss-green: #606c38ff;
+--pakistan-green: #283618ff;
+--cornsilk: #fefae0ff;
+--earth-yellow: #dda15eff;
+--tigers-eye: #bc6c25ff;
+
+/* CSS HEX */
+--onyx: #393e41ff;
+--timberwolf: #d3d0cbff;
+--old-gold: #e2c044ff;
+--myrtle-green: #587b7fff;
+--eerie-black: #1e2019ff;
+
+/* CSS HEX */
+--night: #0d0a0bff;
+--charcoal: #454955ff;
+--magnolia: #f3eff5ff;
+--apple-green: #72b01dff;
+--office-green: #3f7d20ff;
 - blue https://coolors.co/palette/03045e-023e8a-0077b6-0096c7-00b4d8-48cae4-90e0ef-ade8f4-caf0f8
 
 - red to yellow https://coolors.co/palette/03071e-370617-6a040f-9d0208-d00000-dc2f02-e85d04-f48c06-faa307-ffba08
