@@ -1,7 +1,4 @@
 
-*{
-    color: var(--color-1);
-}
 
 :root{
     /* Colors */
@@ -30,29 +27,15 @@
     --img-sizing-1: 10rem;
 }
 
-body{
-    background-image: url(./media/coffeeform.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-
-}
-
 main{
-    display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    background-color: var(--color-2);
 }
 
-.logincontainer{
-    background: transparent;
-    backdrop-filter: blur(25px);
-
+.createaccountsection{
+    background-color: aliceblue;
     padding: var(--spacing-1);
-    gap: var(--spacing-1);
-
-    width: 40%;
+    border-radius: var(--spacing-1);
 }

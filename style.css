@@ -6,6 +6,8 @@
     margin: 0;
     padding: 0;
     font-size: inherit;
+    box-sizing: border-box;
+
     font-family: var(--font-family-p);
     color: var(--color-2);
 
@@ -38,27 +40,21 @@
     --spacing-1: 1rem;
     --spacing-2: 2rem;
     --spacing-xl: 5rem;
-
-    --img-sizing-1: 10rem;
-}
-
-section{
-    width: 80%;
-    margin: 0 auto;
-
-    background-color: var(--color-3);
-    border-radius: var(--spacing-1);
-    margin-bottom: var(--spacing-2);
 }
 
 img{
     display: block;
+    width: 100%;
+}
+
+section{
+    max-width: 90%;
+    margin: 0 auto;
+
 }
 
 /* change li here as child of first ul tag */
-li{
-    margin-right: 1rem;
-}
+
 
 /* Utility Class */
 .flex{
@@ -69,6 +65,8 @@ li{
     display:flex;
     flex-direction: column;
 }
+
+
                         /* media screen webscreen */
 /* navigation section */
 nav{
@@ -82,6 +80,8 @@ nav{
     position: relative;
     justify-content: center;
     align-items: center;
+
+    min-height: 80vh;
 }
 
 .headsection:hover{
@@ -89,27 +89,44 @@ nav{
 }
 
 .HeadImgContainer{
+    width: 240px;
+    
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-/* account section */
-.centercontent{
     align-items: center;
     justify-content: center;
 }
+
+.headerimg{
+    width: 100%;
+}
+
+
+/* account section */
+
 /* order section */
-.ordersection img{
-    width: var(--img-sizing-1);
+.ordercontainer,.rewardsection{
+    background-color: var(--color-3);
+
+    padding: var(--spacing-1);
+    border-radius: var(--spacing-1);
 }
+
+.ordersimgcontainer{
+    height: 25vh;
+    overflow: hidden;
+    
+    border: var(--color-1) solid;
+    border-radius: var(--spacing-1);
+    
+
+    position: relative;
+}
+
 /* reward section */
-.rewardcontent{
-    align-items: center;
-    gap: var(--spacing-xl);
-}
-.rewardcontent img{
-    transform: rotate(45deg);
+
+.rewardsimgcontainer{
+    width: 240px;
+    border: var(--color-1) 5px solid;
 }
 /* about us section */
 .aboutcontent{
@@ -124,10 +141,6 @@ nav{
 }
 .aboutheading{
     font-size: var(--font-size-h1);
-}
-
-.imgcontainer{
-    width: 270px;
 }
                         /* media screen 470px */
                         /* media screen 320px */

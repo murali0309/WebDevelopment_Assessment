@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+}
+
+/* CSS Reset */
+:root{
+    /* Colors */
+    --color-1: #ffff;
+    --color-2: #000;
+    --color-3: whitesmoke;
+
+    /* font */
+    --font-family-p: 'Lucida Sans', sans-serif;
+    --font-size-p: .9rem;
+    --font-size-h1: 2rem;
+    --font-size-btn: 1rem;
+
+    --font-weight-r:400;
+    --font-weight-b:500;
+    --font-weight-xb:900;
+
+    /* spacing */
+    --padding-1: 1rem;
+    --padding-2: 2rem;
+
+    --spacing-1: 1rem;
+    --spacing-2: 2rem;
+    --spacing-xl: 5rem;
+
+    --img-sizing-1: 10rem;
+}
+/* topbanner */
+.topbanner{
+    gap: var(--spacing-2);
+}
+/* previous order section */
+.previousorders{
+    background-color: aliceblue;
+    border: #000 solid .1rem;
+    border-radius: var(--spacing-1);
+    align-items: center;
+    padding: var(--spacing-1);
+    gap: var(--spacing-1);
+}
+
+.pre_img{
+    border: #000 solid;
+    padding: var(--spacing-xl);
+    border-radius: var(--spacing-1);
+}
+
+.recommendation{
+    max-width: 70%;
+    gap: var(--spacing-1);
+    background-color: antiquewhite;
+    padding: var(--spacing-1);
+    border-radius: var(--spacing-1);
+    overflow: hidden;
+}
+
+/* collect rewards */
+.collectrewards{
+    max-width: 40%;
+    padding: var(--spacing-1);
+    text-align: center;
+    gap: var(--spacing-1);
+}
+.imgscanner{
+    border: #000 solid .1rem;
+    background-color: #000;
+    color: aliceblue;
+    border-radius: var(--spacing-1);
+}
+
+/* dinein or tack away */
+.dinein_tackaway{
+    max-width: 40%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.table_select{
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-1);
+}
+
+.table_no{
+    padding: var(--spacing-1);
+    background-color: antiquewhite;
+    border-radius: var(--spacing-1);
+}

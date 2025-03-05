@@ -6,6 +6,7 @@
     <title>Create Account</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="createaccount.css">
 </head>
 <body>
     <!-- web screen layout -->
@@ -23,14 +24,42 @@
             <a href="login.html"><button>Sign in</button></a>
         </ul>
     </nav>
+<main class="flex">
+    <section class="createaccountsection | flexcol">
+        <div class="formtextcontainer">
+            <p>Join us</p>
+            <p>explore digi-store collect rewards and more...</p>
+        </div>
+        <div>
+            <form action="">
+                <div>
+                    <p>Presonal Info</p>
+                    <label for="">First Name</label> <input type="text" placeholder=" * First name" >
+                    <label for="">Last Name</label> <input type="text" placeholder=" * Last name" >    
+                </div>
+                <div>
+                    <p>Account security</p>
+                    <label for="">Email</label> <input type="email" placeholder=" * First name" >
+                    <label for="">Password</label> <input type="password" placeholder=" * Password" >    
+                </div>
+                <div>
+                    <div>
+                        <p>Your Birthday</p>
+                        <input type="text" placeholder=" * month" >
+                        <input type="text" placeholder=" *day" >    
+                    </div>
+                    <div>
+                        <input type="checkbox">
+                        <p>accept and agree to following terms and policies</p>
+                        <a href="#">Rewards terms and conditions Expressoo cards</a>
+                    </div>
+                </div>
+            </form>
+            <button>create account</button>
+        </div>
 
-    <form action="">
-        <p>createaccount</p>
-        <label for="">email</label> <input type="text" >
-        <label for="">email</label> <input type="text" >
-        <label for="">email</label> <input type="text" >
-        <label for="">email</label> <input type="text" >
-    </form>
-    <button>create account</button>
+    </section>
+</main>
+
 </body>
 </html>
