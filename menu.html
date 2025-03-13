@@ -3,74 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
+    <title>home</title>
+    <link rel="icon" href="./media/coffeeCupCrop.png">
+<!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<!-- icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- style sheets  -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- web screen layout -->
+<!-- web screen layout -->
     <nav class="nav_container | flex">
-        <ul class="navlinks | flex">
-            <a href="index.html"><li>Home</li></a>
-            <a href="menu.html"><li>Menu</li></a>
-            <a href="rewards.html"><li>Rewards</li></a>
-        </ul>
-        <a class="logo" href="#">Epresso Coffeeoo</a>
-        <ul class="navicons | flex">
-            <li class="flex"><a href=""><img src="./media/location_on_icon.svg" alt=""></a></li>
-            <li class="flex"><a href="">Find a store</a></li>
-            <!-- cart icon is missing since this is not a usermenu.html -->
+<!-- mobile screen navigation layout -->
+        <ul class="navlinkscontainer-mobile | flexcol">
+            <li><a onclick="closeMenu()" href="#"><i class="fa-solid fa-xmark"></a></i></li>
 
-            <a href=""><button>Join Us</button></a>
-            <a href="login.html"><button>Sign in</button></a>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="rewards.html">Rewards</a></li>
+            <li><a href="createaccount.html">Join Us</a></li>
+            <li><a href="login.html">Sign in</a></li>
+        </ul>
+
+<!-- web screen navigation layout -->
+        <ul class="navlinkscontainer | flex">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="rewards.html">Rewards</a></li>
+        </ul>
+        <div class="logocontainer | flex">
+            <a class="logo" href="#">Epresso Coffeeoo</a>
+            <a onclick="openMenu()" class="icon-none" href="#"><i class="fa-solid fa-bars | "></i></a>
+        </div>
+        <ul class="navbuttoncontainer | flex">
+            <li><a href="createaccount.html">Join Us</a></li>
+            <li><a href="login.html">Sign in</a></li>
         </ul>
     </nav>
-    
     <!-- main menu section  -->
      <main>
-        <section class="searchContainer | flex">
-            <div>icon</div>
-            <input type="search" placeholder="Find Item">
-        </section>
-
-        <section class="menucontainer">
-            <p>menu</p>
-        </section>
-
-
-        <section class="itemtitlecontainer">
-            <p>star item</p>
-        </section>
-        <section class="itemcontainer | flex">
-
-            <div class="itemcard | flexcol">
-                <img class="itemimg" src="./media/whitelatte.jpg" alt="">
-                <p>item name</p>
-                <div class="countcontainer | flex">
-                    <button class="minsbtu">-</button>
-                    <button class="minsbtu">Add</button>
-                    <button class="minsbtu">+</button>
-                </div>
-            </div>
-            <div class="itemcard | flexcol">
-                <img class="itemimg" src="./media/whitelatte.jpg" alt="">
-                <p>item name</p>
-                <div class="countcontainer">
-                    <button class="minsbtu">-</button>
-                    <button class="minsbtu">Add</button>
-                    <button class="minsbtu">+</button>
-                </div>
-            </div>
-        </section>
-        <section class="combo">
-            <img src="./media/image.png" width="120px" alt="">
-            <img src="./media/image.png" width="120px" alt="">
-            <img src="./media/image.png" width="120px" alt="">
-            <img src="./media/image.png" width="120px" alt="">
-        </section>
+        
      </main>
     
 <!-- footer add here after from index html page -->
+
+
+<script>
+    function openMenu(){
+        const sidemenu = document.querySelector('.navlinkscontainer-mobile')
+        sidemenu.style.display = 'flex';
+    }
+
+    function closeMenu(){
+        const sidemenu = document.querySelector('.navlinkscontainer-mobile')
+        sidemenu.style.display = 'none';
+    }
+</script>
 </body>
 </html>
