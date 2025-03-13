@@ -5,65 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- web screen layout -->
     <nav class="nav_container | flex">
-        <ul class="navlinks | flex">
-            <a href="index.html"><li>Home</li></a>
-            <a href="menu.html"><li>Menu</li></a>
-            <a href="rewards.html"><li>Rewards</li></a>
+        <ul class="navlinkscontainer | flex">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="rewards.html">Rewards</a></li>
         </ul>
-        <a class="logo" href="#">Epresso Coffeeoo</a>
-        <ul class="navicons | flex">
-            <li class="flex"><a href=""><img src="./media/location_on_icon.svg" alt=""></a></li>
-            <li class="flex"><a href="">Find a store</a></li>
-            <a href="createaccount.html"><button>Join Us</button></a>
-            <a href="login.html"><button>Sign in</button></a>
+        <div class="logocontainer">
+            <a class="logo" href="#">Epresso Coffeeoo</a>
+        </div>
+        <ul class="navbuttoncontainer | flex">
+            <li><a href="createaccount.html">Join Us</a></li>
+            <li><a href="login.html">Sign in</a></li>
         </ul>
     </nav>
 
     <!-- main section -->
     <main>
         <header class="headsection | flex">
-            <div class="leftCol">
-                <p class="headtext">Expresso</p>
-                <p class="headtext">Hangout ooo</p>
-                <p class="headtext">coffee ooo!</p>
-                <a class="explorelink" href="menu.html">Explore menu</a>
+            <aside class="leftcol">
+                <p>Expresso</p>
+                <p>Hangout ooo</p>
+                <p>coffee ooo!</p>
+                <a class="explorelink" href="menu.html"><p>Explore menu</p></a>
+            </aside>
+            <section class="emptymidsection | positionrelative">
+                <!-- mid coloum is empty but relative positioned for headimg sectcion -->
+            </section>
+
+            <aside class="rightcol">
+                <p>Student offer</p>
+                <p>rewards</p>
+                <p>explore</p>
+            </aside>
+
+<!-- header floating section  --> <!-- floting mid section  -->
+            <div class="floatingcontainer | flexcol">
+                <figure class="positionrelative">
+                    <img class="floatingimg" src="./media/coffeeCupCrop.png" alt="">
+                </figure>
+                <a href="menu.html"><button class="button-primary">Buy now</button></a>
             </div>
-            <div class="midcol">
-                <!-- mid col is empty -->
-            </div>
-            <div class="rightcol">
-                <p class="offer">Student offer</p>
-            </div>
-<!-- header floating section -->
-            <figure class="HeadImgContainer | flexcol">
-                <img class="headerimg" src="./media/coffeeCupCrop.png" alt="">
-                <a href="menu.html">Buy now</a>
-            </figure>
         </header>
 
+<!-- account section wiht animation of text auto scroll up -->
         <section class="accoutsection">
-            <div>
-                <div class="flex">
-                    <p>find us</p>
-                    <p>hangout</p>
-                    <p>stress out</p>
-                </div>
-                <div>
-                    <a href=""><button>join us</button></a>
-                    <a href="login.html"><button>sign in</button></a>
+            <div class="animationdisplay">
+                <div class="textrollupcontainer">
+                    <p class="animationflyup">FIND US</p>
                 </div>
             </div>
         </section>
 
         <section class="ordercontainer">
-            <figure class="ordersimgcontainer">
-                <img class="img-1" src="./media/test_img.jpg" alt="">
-            </figure>
+            <div class="ordersimgcontainer">
+                <figure class="container-1">
+                    <img src="./media/image.png" alt="">
+                </figure>
+            </div>
+
             <div class="orderstextcontainer">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, vitae qui! Amet, veniam natus expedita iure minima laudantium, tempore, ad in possimus a earum. Soluta fuga facilis iste nemo eum!</p>
                 <a href="menu.html"><button>Order now</button></a>
@@ -91,12 +103,13 @@
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque reiciendis similique maxime voluptatibus? Quibusdam soluta harum aliquid optio saepe odit quam cupiditate, ea natus consequuntur placeat repudiandae dolore atque porro!</p>
                     <a href="about.html"><button>Know more</button></a>
                 </div>
-                <div class="imgcontainer">
+                <div class="aboutimgcontainer">
                     <img src="./media/coffeeCupCrop.png" width="100%" alt="">
                 </div>    
             </div>   
         </section>
     </main>
+
 
 </body>
 </html>

@@ -1,13 +1,8 @@
 color pallete [website](https://coolors.co/palettes/trending)
 ---
 # shotlisted pallet to the cusine type
-ice cream
-- flavor 1:
-- flavor 2:
-
-shakes
-- 1:
-- 2:
+ui elements 
+buttons - https://uiverse.io/lucifer4330k/rare-badger-54
 
 ---
 ### color shades
