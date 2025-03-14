@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home</title>
-    <link rel="icon" href="./media/coffeeCupCrop.png">
+    <link rel="icon" href="./media/Meta_logo_img.png">
 <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,15 +28,15 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="menu.html">Menu</a></li>
             <li><a href="rewards.html">Rewards</a></li>
-            <li><a href="createaccount.html">Join Us</a></li>
-            <li><a href="login.html">Sign in</a></li>
+            <li><a class="button-small" href="createaccount.html">Join Us</a></li>
+            <li><a class="button-small" href="login.html">Sign in</a></li>
         </ul>
 
 <!-- web screen navigation layout -->
         <ul class="navlinkscontainer | flex">
             <li><a href="index.html">Home</a></li>
             <li><a href="menu.html">Menu</a></li>
-            <li><a href="rewards.html">Rewards</a></li>
+            <li><a class="navreward" href="rewards.html">Rewards</a></li>
         </ul>
         <div class="logocontainer | flex">
             <a class="logo" href="about.html"><p class="logotext">Epresso Coffeeoo</p></a>
@@ -130,16 +130,6 @@
 
 
 
-    <script>
-        function openMenu(){
-            const sidemenu = document.querySelector('.navlinkscontainer-mobile')
-            sidemenu.style.display = 'flex';
-        }
-
-        function closeMenu(){
-            const sidemenu = document.querySelector('.navlinkscontainer-mobile')
-            sidemenu.style.display = 'none';
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home</title>
-    <link rel="icon" href="./media/coffeeCupCrop.png">
+    <link rel="icon" href="./media/Meta_logo_img.png">
 <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +17,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <!-- style sheets  -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="userstyle.css">
 </head>
 <body>
 <!-- web screen layout -->
@@ -25,80 +26,130 @@
         <ul class="navlinkscontainer-mobile | flexcol">
             <li><a onclick="closeMenu()" href="#"><i class="fa-solid fa-xmark"></a></i></li>
 
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="rewards.html">Rewards</a></li>
-            <li><a href="createaccount.html">Join Us</a></li>
-            <li><a href="login.html">Sign in</a></li>
-        </ul>
-
-<!-- web screen navigation layout -->
-        <ul class="navlinkscontainer | flex">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="rewards.html">Rewards</a></li>
+            <li><a href="rewards.html"></a></li>
+            <li><a href="index.html">Profile</a></li>
+            <li><a href="menu.html">Cart</a></li>
         </ul>
         <div class="logocontainer | flex">
-            <a class="logo" href="#">Epresso Coffeeoo</a>
+            <a class="menulogo" href="#"><p class="logotext">Epresso Coffeeoo</p></a>
             <a onclick="openMenu()" class="icon-none" href="#"><i class="fa-solid fa-bars | "></i></a>
         </div>
-        <ul class="navbuttoncontainer | flex">
-            <li><a href="createaccount.html">Join Us</a></li>
-            <li><a href="login.html">Sign in</a></li>
+        <ul class="menulinkcontainer | flex">
+            <li><a href="rewards.html">Rewards</a></li>
+            <li><a href="index.html">Profile</a></li>
+            <li><a href="menu.html">Cart</a></li>
         </ul>
     </nav>
 
+
+     <!-- item container start -->
+     <div class="itemcardcontainer | flex">
+        <aside class="itemimgcontainer">
+            <figure class="itemimgblock">
+                <img src="./media/cream_chocolate_latte.jpg" alt="">
+            </figure>
+            <div class="counter | flex">
+                <button class="button-none">-</button>
+                <button>ADD</button>
+                <button class="button-none">+</button>
+            </div>
+        </aside>
+        <aside class="itemtextcontainer | flexcol">
+            <div class="itemtag-veg | flex"><i class="fa-regular fa-circle-dot"></i><p>Bestseller</p></div>
+            <p>item name</p>
+            <p class="pricetag">£10</p>
+            <div class="ratingtag | flex"><i class="fa-solid fa-star"></i><p>4.5</p></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus harum pariatur nemo accusantium natus a ab.</p>
+        </aside>
+    </div>
+    <!-- item container end -->
+     <!--  addded item container start -->
+     <div class="itemcardcontainer | flex">
+        <aside class="itemimgcontainer">
+            <figure class="itemimgblock">
+                <img src="./media/cream_chocolate_latte.jpg" alt="">
+            </figure>
+            <div class="counter-on | flex">
+                <div class="flex">
+                <button>-</button>
+                <p>1</p>
+                <button>+</button>
+            </div>
+            </div>
+        </aside>
+        <aside class="itemtextcontainer | flexcol">
+            <div class="itemtag-veg | flex"><i class="fa-regular fa-circle-dot"></i><p>Bestseller</p></div>
+            <p>item name</p>
+            <p class="pricetag">£10</p>
+            <div class="ratingtag | flex"><i class="fa-solid fa-star"></i><p>4.5</p></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus harum pariatur nemo accusantium natus a ab.</p>
+        </aside>
+    </div>
+    <!-- item added container end -->
+
+<!-- rest of the page -->
     <main>
-        <section class="topbanner | flex">
-            <div class="previousorders | flexcol">
-                <p class="pre_img">+</p>
-                <p>item title</p>
-                <button>order again</button>
-            </div>
-            <div class="recommendation | flex">
-                <div class="previousorders | flexcol">
-                    <p class="pre_img">+</p>
-                    <p>item title</p>
-                    <button>order again</button>
+        <header class="Pastordercontainer | flex">
+            <section class="pastorderitems | flexcol">
+                <h1 class="logotext">Past order</h1>
+                     <!-- item container start -->
+                <div class="itemcardcontainer | flex">
+                   <aside class="itemimgcontainer">
+                       <figure class="itemimgblock">
+                           <img src="./media/cream_chocolate_latte.jpg" alt="">
+                       </figure>
+                       <div class="counter | flex">
+                           <button class="button-none">-</button>
+                           <button>ADD</button>
+                           <button class="button-none">+</button>
+                       </div>
+                   </aside>
+                   <aside class="itemtextcontainer | flexcol">
+                       <div class="itemtag-veg | flex"><i class="fa-regular fa-circle-dot"></i><p>Bestseller</p></div>
+                       <p>item name</p>
+                       <p class="pricetag">£10</p>
+                       <div class="ratingtag | flex"><i class="fa-solid fa-star"></i><p>4.5</p></div>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus harum pariatur nemo accusantium natus a ab.</p>
+                   </aside>
                 </div>
-                <div class="previousorders | flexcol">
-                    <p class="pre_img">+</p>
-                    <p>item title</p>
-                    <button>order again</button>
+                <!-- item container end -->
+                <div class="pastordercaptionbox | flexcol">
+                    <p>item name x 1</p>
+                    <button class="button-primary">Reorder</button>
                 </div>
-                <div class="previousorders | flexcol">
-                    <p class="pre_img">+</p>
-                    <p>item title</p>
-                    <button>order again</button>
+            </section>
+            <section class="pastorderitems | flexcol">
+                <h1 class="logotext">Recommendations</h1>
+                     <!-- item container start -->
+                <div class="itemcardcontainer | flex">
+                   <aside class="itemimgcontainer">
+                       <figure class="itemimgblock">
+                           <img src="./media/cream_chocolate_latte.jpg" alt="">
+                       </figure>
+                       <div class="counter | flex">
+                           <button class="button-none">-</button>
+                           <button>ADD</button>
+                           <button class="button-none">+</button>
+                       </div>
+                   </aside>
+                   <aside class="itemtextcontainer | flexcol">
+                       <div class="itemtag-veg | flex"><i class="fa-regular fa-circle-dot"></i><p>Bestseller</p></div>
+                       <p>item name</p>
+                       <p class="pricetag">£10</p>
+                       <div class="ratingtag | flex"><i class="fa-solid fa-star"></i><p>4.5</p></div>
+                       <p class="itemdescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus harum pariatur nemo accusantium natus a ab.</p>
+                   </aside>
                 </div>
-            </div>
-        </section>
+                <!-- item container end -->
+                <div class="pastordercaptionbox | flexcol">
+                    <p>item name x 1</p>
+                    <button class="button-primary">Place order</button>
+                </div>
+            </section>
+        </header>
 
-        <section class="collectrewards | flexcol">
-            <p>collect reward</p>
-            <p class="imgscanner">go <br> scan <br> QR </p>
-            <button>scan QR CUP</button>
-        </section>
-
+        <section>menu</section>
     </main>
-    <header id="usermenusection | flexcol">
-        <section class="dinein_tackaway | flex">
-            <button>dine in</button>
-            <button>take away</button>
-        </section>
-
-        <section class="table_select | flex">
-            <p class="table_no">1</p>
-            <p class="table_no">2</p>
-            <p class="table_no">3</p>
-            <p class="table_no">4</p>
-            <p class="table_no">5</p>
-            <p class="table_no">6</p>
-            <p class="table_no">7</p>
-            <p class="table_no">8</p>
-            <p class="table_no">9</p>
-        </section>
-        <!-- menu code from menu.html -->
-    </header>
+    <script src="script.js"></script>
 </body>
 </html>
