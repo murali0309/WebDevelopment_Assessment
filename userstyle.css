@@ -58,7 +58,7 @@
     --button-padding-large:4rem;
 
     --gap-small: .2rem;
-    --gap-medium: .4rem;
+    --gap-medium: .6rem;
     --gap-large: 2rem;
 
     --spacing-xs: .1rem;
@@ -72,6 +72,7 @@
 
     --margin-s: 1rem;
     --section-margin: 10rem;
+    --menu-section-margin: 2rem;
 
     --boder-radius-full: 20rem;
     --boder-radius-xs: .2rem;
@@ -86,7 +87,7 @@ img{
 
 section{
     max-width: 90%;
-    margin: 0 auto;
+    margin: var(--margin-s) auto;
 
 }
 
@@ -203,6 +204,11 @@ font-weight: 900;
     display: none;
 }
 
+/* main */
+.menumain{
+    gap: var(--section-margin);
+}
+
 /* past order items */
 .Pastordercontainer{
     gap: var(--gap-large);
@@ -219,6 +225,39 @@ font-weight: 900;
 .pastorderitems h1{
     margin-bottom: var(--margin-s);
 }
+
+/* deals container */
+.offerssection{
+    width: 100%;
+}
+.dealscontainer{
+    width: 100%;
+    padding: var(--padding-2) 0;
+
+    gap: var(--gap-medium);
+}
+
+.dealcontent{
+    align-items: center;
+    gap: var(--gap-medium);
+    padding: var(--button-padding-small);
+    border:  solid var(--shadow-color);
+    border-radius: var(--boder-radius-s);
+}
+.iconcontaienr{
+    width: 48px;
+    height: 48px;
+    border-radius: var(--boder-radius-full);
+}
+.fa-percent{
+    color: var(--color-1);
+    padding: 12px 2px;
+}
+.dealstextcontainer{
+    width: 180px;
+}
+
+
 @media screen and (max-width: 900px) {
 
     .logocontainer{
