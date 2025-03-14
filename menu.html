@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu</title>
+    <link rel="icon" href="./media/Meta_logo_img.png">
+<!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<!-- icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- style sheets  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="userstyle.css">
+</head>
+<body>
+<!-- web screen layout -->
+    <nav class="nav_container | flex">
+<!-- mobile screen navigation layout -->
+        <ul class="navlinkscontainer-mobile | flexcol">
+            <li><a onclick="closeMenu()" href="#"><i class="fa-solid fa-xmark"></a></i></li>
+
+            <li><a href="rewards.html"></a></li>
+            <li><a href="index.html">Profile</a></li>
+            <li><a href="menu.html">Cart</a></li>
+        </ul>
+        <div class="logocontainer | flex">
+            <a class="menulogo" href="#"><p class="logotext">Epresso Coffeeoo</p></a>
+            <a onclick="openMenu()" class="icon-none" href="#"><i class="fa-solid fa-bars | "></i></a>
+        </div>
+        <ul class="menulinkcontainer | flex">
+            <li><a href="rewards.html">Rewards</a></li>
+            <li><a href="index.html">Profile</a></li>
+            <li><a href="menu.html">Cart</a></li>
+        </ul>
+    </nav>
+
+<!-- rest of the page -->
+    <main class="menumain flexcol">
+<section class="offerssection">
+    <div class="activescrollx">
+    <h1 class="logotext">Deals of the day</h1>
+    <div class="dealscontainer flex">
+        <!-- offer item starts -->
+        <div class=" dealcontent | flex">
+            <div class="iconcontaienr logotext">
+                <i class="fa-solid fa-percent"></i>
+            </div>
+            <div class="dealstextcontainer">
+                <h1>Flat £2 off</h1>
+                <p>use code offer-1</p>
+            </div>
+        </div>
+        <!-- offer item ends -->
+        <!-- offer item starts -->
+        <div class=" dealcontent | flex">
+            <div class="iconcontaienr logotext">
+                <i class="fa-solid fa-percent"></i>
+            </div>
+            <div class="dealstextcontainer">
+                <h1>Flat £2 off</h1>
+                <p>use code offer-1</p>
+            </div>
+        </div>
+        <!-- offer item ends -->
+        <!-- offer item starts -->
+        <div class=" dealcontent | flex">
+            <div class="iconcontaienr logotext">
+                <i class="fa-solid fa-percent"></i>
+            </div>
+            <div class="dealstextcontainer">
+                <h1>Flat £2 off</h1>
+                <p>use code offer-1</p>
+            </div>
+        </div>
+        <!-- offer item ends -->
+        <!-- offer item starts -->
+        <div class=" dealcontent | flex">
+            <div class="iconcontaienr logotext">
+                <i class="fa-solid fa-percent"></i>
+            </div>
+            <div class="dealstextcontainer">
+                <h1>Flat £2 off</h1>
+                <p>use code offer-1</p>
+            </div>
+        </div>
+        <!-- offer item ends -->
+        <!-- offer item starts -->
+        <div class=" dealcontent | flex">
+            <div class="iconcontaienr logotext">
+                <i class="fa-solid fa-percent"></i>
+            </div>
+            <div class="dealstextcontainer">
+                <h1>Flat £2 off</h1>
+                <p>use code offer-1</p>
+            </div>
+        </div>
+        <!-- offer item ends -->
+    </div>
+</div>
+</section>
+
+<section class="menu flexcol">
+    <div class="menusectiontitle">
+        <h1 class="logotext">Menu</h1>
+    </div>
+
+    <div class="menuvegshort flex">
+        <div class="itemtag-veg | flex"><i class="fa-regular fa-circle-dot"></i><p>veg</p></div>
+        <div class="itemtag-nonveg | flex"><i class="fa-regular fa-circle-dot"></i><p>non-veg</p></div>
+    </div>
+
+    <div class="margintop | flexcol">
+        <div class="menusectiontitle">
+            <h1 class="logotext">Creamy latte</h1>
+        </div>
+
+        <div class="menucol margintop">
+            <div class="tworowitems | flexcol">
+                     <!--  addded item container start -->
+                     <div class="itemcardcontainer | flex">
+                        <aside class="itemimgcontainer">
+                            <figure class="itemimgblock img-1">                                    </figure>
+                            <div class="counter-on | flex">
+                                <div class="flex">
+                                <button>-</button>
+                                <p>1</p>
+                                <button>+</button>
+                            </div>
+                            </div>
+                        </aside>
+                        <aside class="itemtextcontainer | flexcol">
+                            <div class="itemtag-veg | flex"><i class="fa-regular fa-circle-dot"></i><p>Bestseller</p></div>
+                            <p>item name</p>
+                            <p class="pricetag">£10</p>
+                            <div class="ratingtag | flex"><i class="fa-solid fa-star"></i><p>4.5</p></div>
+                            <p class="itemdescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus harum pariatur nemo accusantium natus a ab.</p>
+                        </aside>
+                     </div>
+ <!-- item added container end -->
+                                        <!-- item container start -->
+                <div class="itemcardcontainer | flex">
+                <aside class="itemimgcontainer">
+                <figure class="itemimgblock img-2"></figure>
+                <div class="counter | flex">
+                <button class="button-none">-</button>
+                <button>ADD</button>
+                <button class="button-none">+</button>
+                </div>
+                </aside>
+                <aside class="itemtextcontainer | flexcol">
+                <div class="itemtag-veg | flex"><i class="fa-regular fa-circle-dot"></i><p>Bestseller</p></div>
+                <p>item name</p>
+                <p class="pricetag">£10</p>
+                <div class="ratingtag | flex"><i class="fa-solid fa-star"></i><p>4.5</p></div>
+                <p class="itemdescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus harum pariatur nemo accusantium natus a ab.</p>
+                </aside>
+                </div>
+                <!-- item container end -->
+                </div>
+            <div class="tworowitems | flexcol">
+                <!-- item container start -->
+                <div class="itemcardcontainer | flex">
+                <aside class="itemimgcontainer">
+                <figure class="itemimgblock img-3">
+        
+                </figure>
+                <div class="counter | flex">
+                <button class="button-none">-</button>
+                <button>ADD</button>
+                <button class="button-none">+</button>
+                </div>
+                </aside>
+                <aside class="itemtextcontainer | flexcol">
+                <div class="itemtag-veg | flex"><i class="fa-regular fa-circle-dot"></i><p>Bestseller</p></div>
+                <p>item name</p>
+                <p class="pricetag">£10</p>
+                <div class="ratingtag | flex"><i class="fa-solid fa-star"></i><p>4.5</p></div>
+                <p class="itemdescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus harum pariatur nemo accusantium natus a ab.</p>
+                </aside>
+                </div>
+                <!-- item container end -->
+                     <!--  addded item container start -->
+                     <div class="itemcardcontainer | flex">
+                        <aside class="itemimgcontainer">
+                            <figure class="itemimgblock img-4">                                    </figure>
+                            <div class="counter-on | flex">
+                                <div class="flex">
+                                <button>-</button>
+                                <p>1</p>
+                                <button>+</button>
+                            </div>
+                            </div>
+                        </aside>
+                        <aside class="itemtextcontainer | flexcol">
+                            <div class="itemtag-veg | flex"><i class="fa-regular fa-circle-dot"></i><p>Bestseller</p></div>
+                            <p>item name</p>
+                            <p class="pricetag">£10</p>
+                            <div class="ratingtag | flex"><i class="fa-solid fa-star"></i><p>4.5</p></div>
+                            <p class="itemdescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus harum pariatur nemo accusantium natus a ab.</p>
+                        </aside>
+                     </div>
+ <!-- item added container end -->
+                </div>
+            <div class="tworowitems | flexcol">
+                <!-- item container start -->
+                <div class="itemcardcontainer | flex">
+                <aside class="itemimgcontainer">
+                <figure class="itemimgblock img-5">                        </figure>
+                <div class="counter | flex">
+                <button class="button-none">-</button>
+                <button>ADD</button>
+                <button class="button-none">+</button>
+                </div>
+                </aside>
+                <aside class="itemtextcontainer | flexcol">
+                <div class="itemtag-veg | flex"><i class="fa-regular fa-circle-dot"></i><p>Bestseller</p></div>
+                <p>item name</p>
+                <p class="pricetag">£10</p>
+                <div class="ratingtag | flex"><i class="fa-solid fa-star"></i><p>4.5</p></div>
+                <p class="itemdescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus harum pariatur nemo accusantium natus a ab.</p>
+                </aside>
+                </div>
+                <!-- item container end -->
+                                        <!-- item container start -->
+                <div class="itemcardcontainer | flex">
+                <aside class="itemimgcontainer">
+                <figure class="itemimgblock img-6"></figure>
+                <div class="counter | flex">
+                <button class="button-none">-</button>
+                <button>ADD</button>
+                <button class="button-none">+</button>
+                </div>
+                </aside>
+                <aside class="itemtextcontainer | flexcol">
+                <div class="itemtag-veg | flex"><i class="fa-regular fa-circle-dot"></i><p>Bestseller</p></div>
+                <p>item name</p>
+                <p class="pricetag">£10</p>
+                <div class="ratingtag | flex"><i class="fa-solid fa-star"></i><p>4.5</p></div>
+                <p class="itemdescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus harum pariatur nemo accusantium natus a ab.</p>
+                </aside>
+                </div>
+                <!-- item container end -->
+                </div>
+
+        </div>
+
+        <!-- catogory -->
+        <div class="menusectiontitle">
+            <h1 class="logotext">Ice Drinks</h1>
+        </div>
+
+        <div class="menucol margintop">
+            <div class="tworowitems | flexcol">
+                     <!--  addded item container start -->
+                     <div class="itemcardcontainer | flex">
+                        <aside class="itemimgcontainer">
+                            <figure class="itemimgblock img-7">                                    </figure>
+                            <div class="counter-on | flex">
+                                <div class="flex">
+                                <button>-</button>
+                                <p>1</p>
+                                <button>+</button>
+                            </div>
+                            </div>
+                        </aside>
+                        <aside class="itemtextcontainer | flexcol">
+                            <div class="itemtag-veg | flex"><i class="fa-regular fa-circle-dot"></i><p>Bestseller</p></div>
+                            <p>item name</p>
+                            <p class="pricetag">£10</p>
+                            <div class="ratingtag | flex"><i class="fa-solid fa-star"></i><p>4.5</p></div>
+                            <p class="itemdescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus harum pariatur nemo accusantium natus a ab.</p>
+                        </aside>
+                     </div>
+ <!-- item added container end -->
+                                        <!-- item container start -->
+                <div class="itemcardcontainer | flex">
+                <aside class="itemimgcontainer">
+                <figure class="itemimgblock img-8">
+                </figure>
+                <div class="counter | flex">
+                <button class="button-none">-</button>
+                <button>ADD</button>
+                <button class="button-none">+</button>
+                </div>
+                </aside>
+                <aside class="itemtextcontainer | flexcol">
+                <div class="itemtag-veg | flex"><i class="fa-regular fa-circle-dot"></i><p>Bestseller</p></div>
+                <p>item name</p>
+                <p class="pricetag">£10</p>
+                <div class="ratingtag | flex"><i class="fa-solid fa-star"></i><p>4.5</p></div>
+                <p class="itemdescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus harum pariatur nemo accusantium natus a ab.</p>
+                </aside>
+                </div>
+                <!-- item container end -->
+        </div>                
+    </div>
+</section>
+
+<footer class="flexcol">
+    <div class="logocontainer | flex">
+        <a class="menulogo" href="#"><p class="logotext">Epresso Coffeeoo</p></a>
+    </div>
+
+    <div class="footercol flex">
+        <aside>
+        <h1 style="margin-bottom: 1rem;">Nav links</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Rewards</a></li>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Cart</a></li>
+        </ul>
+        </aside>
+        <aside>
+        <h1 style="margin-bottom: 1rem;">Our socials</h1>
+        <ul>
+            <li><a href="https://en-gb.facebook.com/">Facebook</a></li>
+            <li><a href="https://x.com/">Twitter</a></li>
+            <li><a href="https://www.instagram.com/">Instagram</a></li>
+        </ul>
+        </aside>
+        
+
+    <aside>
+        <div class="contactform">
+            <h2 class="logotext">Feedback</h2>
+            <form style="margin-top: 1rem;" action="https://api.web3forms.com/submit" method="POST" class="homefrom">
+                <input type="hidden" name="access_key" value="67821bb4-da9e-46ad-ab6d-1549db58bb66">
+                <input type="text" id="name" placeholder="Your Name">
+                <input type="email" id="email" placeholder="Email">
+                <textarea name="Meassage" id="message"placeholder="comments" cols="2" rows="4"></textarea>
+                <button class="button-primary">Submit</button>
+            </form>
+        </div>
+    </aside>
+</div>
+
+    <div>
+        <p style="text-align: center;">copyrighted by Expresso Coffeeoo</p>
+    </div>
+    
+</footer>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

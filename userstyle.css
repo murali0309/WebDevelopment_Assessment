@@ -87,8 +87,11 @@ img{
 
 section{
     max-width: 90%;
-    margin: var(--margin-s) auto;
+    margin: var(--menu-section-margin) auto;
+}
 
+.margintop{
+    margin: var(--margin-s) auto;
 }
 
 /* Utility Class */
@@ -102,11 +105,12 @@ section{
 }
 
 .itemcardcontainer{
-    max-width: 500px;
+    max-width: 700px;
     padding: var(--padding-1);
     border-top: 2px  solid var(--color-2);
     gap: var(--spacing-1);
     align-items: center;
+    justify-content: space-between;
 
 }
 .itemimgcontainer{
@@ -114,6 +118,7 @@ section{
 }
 .itemimgblock{
     width: 120px;
+    height: 120px;
     border-radius: var(--boder-radius-s);
     overflow: hidden;
     cursor: pointer;
@@ -166,6 +171,7 @@ section{
 }
 
 .itemtextcontainer{
+    min-width: 120px;
     gap: var(--gap-medium);
 }
 
@@ -176,6 +182,19 @@ section{
 .itemtag-veg p{
     transform: rotate(-3deg);
     background-color: green;
+    color: var(--color-1);
+    font-weight: var(--font-weight-xb);
+}
+
+.itemtag-nonveg i{
+    color: #E43B4F;
+    padding: 0 var(--button-padding-small) 0 0;
+}
+.itemtag-nonveg p{
+    transform: rotate(-3deg);
+    background-color: #E43B4F;
+    color: var(--color-1);
+    font-weight: var(--font-weight-xb);
 }
 .pricetag{
 font-weight: 900;
@@ -204,11 +223,65 @@ font-weight: 900;
     display: none;
 }
 
-/* main */
-.menumain{
-    gap: var(--section-margin);
+/* item img count */
+.img-1{
+    background-image: url(./media/cream_brown_latte.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.img-2{
+    background-image: url(./media/cream_caramel_latte.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.img-3{
+    background-image: url(./media/cream_chocolate_latte.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.img-4{
+    background-image: url(./media/cream_coco_latte.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.img-5{
+    background-image: url(./media/cream_green_latte.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.img-6{
+    background-image: url(./media/cream_white_latte.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.img-7{
+    background-image: url(./media/ice_coffee_drink.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.img-8{
+    background-image: url(./media/ice_orange_drink.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.img-9{
+    background-image: url(./media/ice_coke_drink.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
+.tworowitems{
+    gap: 1rem;
+}
 /* past order items */
 .Pastordercontainer{
     gap: var(--gap-large);
@@ -228,17 +301,22 @@ font-weight: 900;
 
 /* deals container */
 .offerssection{
-    width: 100%;
+    width: 90%;
+    overflow: hidden;
 }
 .dealscontainer{
-    width: 100%;
+    width: 90%;
     padding: var(--padding-2) 0;
 
+    align-items: center;
+    justify-content: center;
+    margin: auto;
     gap: var(--gap-medium);
 }
 
 .dealcontent{
     align-items: center;
+
     gap: var(--gap-medium);
     padding: var(--button-padding-small);
     border:  solid var(--shadow-color);
@@ -257,10 +335,53 @@ font-weight: 900;
     width: 180px;
 }
 
-.menuvegshort{
-     
+.menu{
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    gap: var(--gap-large);
 }
 
+.menusectiontitle{
+    width: 100%;
+    text-align: center;
+}
+.menuvegshort{
+    width: 90%;
+    justify-content: flex-start;
+    gap: var(--gap-medium);
+}
+
+
+footer{
+    background-color: var(--color-2);
+    padding: 4rem;
+    gap: var(--gap-large);
+}
+
+/* footer font color */
+footer h1, footer p, footer aside ul li a{
+    color: var(--color-1);
+}
+
+footer .logocontainer{
+    background-color: var(--color-1);
+    padding: 1rem;
+}
+
+.contactform{
+    background-color: var(--shadow-color);
+    padding: 1rem;
+    border-radius:4px ;
+}
+
+.contactform input, .contactform textarea{
+    border: none;
+    padding: 6px;
+}
+.footercol{
+    justify-content: space-around;
+}
 
 @media screen and (max-width: 900px) {
 
@@ -304,5 +425,19 @@ font-weight: 900;
         transform: rotate(-2deg);
         backdrop-filter: blur(5px);
         cursor: pointer;
+    }
+    .tworowitems{
+        gap: var(--gap-medium);
+        flex-direction: row;
+    }
+
+    footer{
+        padding: 2rem 18px;
+    }
+
+    .footercol{
+        flex-direction: column;
+        align-items: center;
+        gap: var(--margin-s);
     }
 }

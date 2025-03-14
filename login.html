@@ -92,18 +92,53 @@
             </div>
         </section>
     </main>
-    
 
-    <script>
-        function openMenu(){
-            const sidemenu = document.querySelector('.navlinkscontainer-mobile')
-            sidemenu.style.display = 'flex';
-        }
+    <footer class="flexcol">
+        <div class="logocontainer | flex">
+            <a class="menulogo" href="#"><p class="logotext">Epresso Coffeeoo</p></a>
+        </div>
 
-        function closeMenu(){
-            const sidemenu = document.querySelector('.navlinkscontainer-mobile')
-            sidemenu.style.display = 'none';
-        }
-    </script>
+        <div class="footercol flex">
+            <aside>
+            <h1 style="margin-bottom: 1rem;">Nav links</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Rewards</a></li>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+            </aside>
+            <aside>
+            <h1 style="margin-bottom: 1rem;">Our socials</h1>
+            <ul>
+                <li><a href="https://en-gb.facebook.com/">Facebook</a></li>
+                <li><a href="https://x.com/">Twitter</a></li>
+                <li><a href="https://www.instagram.com/">Instagram</a></li>
+            </ul>
+            </aside>
+            
+
+        <aside>
+            <div class="contactform">
+                <h2 class="logotext">Feedback</h2>
+                <form style="margin-top: 1rem;" action="https://api.web3forms.com/submit" method="POST" class="homefrom">
+                    <input type="hidden" name="access_key" value="67821bb4-da9e-46ad-ab6d-1549db58bb66">
+                    <input type="text" id="name" placeholder="Your Name">
+                    <input type="email" id="email" placeholder="Email">
+                    <textarea name="Meassage" id="message"placeholder="comments" cols="2" rows="4"></textarea>
+                    <button class="button-primary">Submit</button>
+                </form>
+            </div>
+        </aside>
+    </div>
+
+        <div>
+            <p style="text-align: center;">copyrighted by Expresso Coffeeoo</p>
+        </div>
+        
+    </footer>
+
+    <script src="script.js"></script>
+
 </body>
 </html>

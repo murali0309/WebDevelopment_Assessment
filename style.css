@@ -492,6 +492,38 @@ nav ul, nav div{
     max-width: 320px;
 }
 
+
+footer{
+    background-color: var(--color-2);
+    padding: 4rem;
+    gap: var(--gap-large);
+}
+
+/* footer font color */
+footer h1, footer p, footer aside ul li a{
+    color: var(--color-1);
+}
+
+footer .logocontainer{
+    background-color: var(--color-1);
+    padding: 1rem;
+}
+
+.contactform{
+    background-color: var(--shadow-color);
+    padding: 1rem;
+    border-radius:4px ;
+}
+
+.contactform input, .contactform textarea{
+    border: none;
+    padding: 6px;
+}
+.footercol{
+    justify-content: space-around;
+    gap: 2rem;
+}
+
 /* animation keyframes */
 
 @keyframes slide {
@@ -586,5 +618,15 @@ nav ul, nav div{
     .emptymidsection,.floatingcontainer{
         max-width: 320px;
         height: 500px;
+    }
+
+        footer{
+        padding: 2rem 18px;
+    }
+
+    .footercol{
+        flex-direction: column;
+        align-items: center;
+        gap: var(--margin-s);
     }
 }

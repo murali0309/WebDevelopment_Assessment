@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
+    <title>Home</title>
     <link rel="icon" href="./media/Meta_logo_img.png">
 <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +27,7 @@
 
             <li><a href="index.html">Home</a></li>
             <li><a href="menu.html">Menu</a></li>
-            <li><a href="rewards.html">Rewards</a></li>
+            <li><a href="#">Rewards</a></li>
             <li><a class="button-small" href="createaccount.html">Join Us</a></li>
             <li><a class="button-small" href="login.html">Sign in</a></li>
         </ul>
@@ -55,7 +55,7 @@
                 <p>Expresso</p>
                 <p>Hangout ooo</p>
                 <p>coffee ooo!</p>
-                <a class="explorelink" href="menu.html"><p>Explore menu</p></a>
+                <a class="explorelink" href="menu.html">Explore menu <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </aside>
             <section class="emptymidsection | positionrelative">
                 <!-- mid coloum is empty but relative positioned for headimg sectcion -->
@@ -63,8 +63,8 @@
 
             <aside class="rightcol">
                 <p class="textslidanimation">Student offer</p>
-                <p>rewards</p>
-                <p>explore</p>
+                <p style="font-size: 18px;">Exculsive offer and rewards</p>
+                <a class="explorelink" href="menu.html">Explore menu <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </aside>
 
 <!-- header floating section  --> <!-- floting mid section  -->
@@ -77,58 +77,52 @@
                 </div>
             </section>
         </header>
-
-<!-- account section wiht animation of text auto scroll up -->
-        <section class="accoutsection">
-            <div class="animationdisplay">
-                <div class="textrollupcontainer">
-                    <p class="animationflyup">FIND US</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="ordercontainer">
-            <div class="ordersimgcontainer">
-                <figure class="container-1">
-                    <img src="./media/image.png" alt="">
-                </figure>
-            </div>
-
-            <div class="orderstextcontainer">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, vitae qui! Amet, veniam natus expedita iure minima laudantium, tempore, ad in possimus a earum. Soluta fuga facilis iste nemo eum!</p>
-                <a href="menu.html"><button>Order now</button></a>
-            </div>
-        </section>
-
-        <section class="rewardsection">
-            <div class="rewardcontent">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-
-                <figure class="rewardsimgcontainer">
-                    <img src="./media/image.png" alt="">
-                </figure>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div>
-                <a href="rewards.html"><button>Fing Rewards</button></a>
-            </div>
-        </section>
-
-        <section class="aboutussection">
-            <div class=" aboutcontent | flex">
-                <div class="abouttext | flexcol">
-                    <p class="aboutheading">About Us</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque reiciendis similique maxime voluptatibus? Quibusdam soluta harum aliquid optio saepe odit quam cupiditate, ea natus consequuntur placeat repudiandae dolore atque porro!</p>
-                    <a href="about.html"><button>Know more</button></a>
-                </div>
-                <div class="aboutimgcontainer">
-                    <img src="./media/coffeeCupCrop.png" width="100%" alt="">
-                </div>    
-            </div>   
-        </section>
     </main>
 
+    <footer class="flexcol">
+        <div class="logocontainer | flex">
+            <a class="menulogo" href="#"><p class="logotext">Epresso Coffeeoo</p></a>
+        </div>
 
+        <div class="footercol flex">
+            <aside>
+            <h1 style="margin-bottom: 1rem;">Nav links</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Rewards</a></li>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+            </aside>
+            <aside>
+            <h1 style="margin-bottom: 1rem;">Our socials</h1>
+            <ul>
+                <li><a href="https://en-gb.facebook.com/">Facebook</a></li>
+                <li><a href="https://x.com/">Twitter</a></li>
+                <li><a href="https://www.instagram.com/">Instagram</a></li>
+            </ul>
+            </aside>
+            
+
+        <aside>
+            <div class="contactform">
+                <h2 class="logotext">Feedback</h2>
+                <form style="margin-top: 1rem;" action="https://api.web3forms.com/submit" method="POST" class="homefrom">
+                    <input type="hidden" name="access_key" value="67821bb4-da9e-46ad-ab6d-1549db58bb66">
+                    <input type="text" id="name" placeholder="Your Name">
+                    <input type="email" id="email" placeholder="Email">
+                    <textarea name="Meassage" id="message"placeholder="comments" cols="2" rows="4"></textarea>
+                    <button class="button-primary">Submit</button>
+                </form>
+            </div>
+        </aside>
+    </div>
+
+        <div>
+            <p style="text-align: center;">copyrighted by Expresso Coffeeoo</p>
+        </div>
+        
+    </footer>
 
     <script src="script.js"></script>
 </body>
